@@ -10,6 +10,7 @@ import {
 } from 'lucide-react';
 import { useAuthStore } from '@/store/authStore';
 import { clsx } from 'clsx';
+import Logo from '../shared/Logo';
 
 const navLinks = [
   { href: '/listings', label: 'Browse Land' },
@@ -52,11 +53,12 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="w-9 h-9 rounded-xl bg-brand-600 flex items-center justify-center shadow-glow group-hover:shadow-glow-lg transition-all">
+            {/* <div className="w-9 h-9 rounded-xl bg-brand-600 flex items-center justify-center shadow-glow group-hover:shadow-glow-lg transition-all">
               <Brain className="w-5 h-5 text-white" />
-            </div>
+            </div> */}
+              <Logo/>
             <span className="font-display font-bold text-xl">
-              Land<span className="gradient-text">IQ</span>
+              <span className="gradient-text"></span>Eland
             </span>
           </Link>
 
