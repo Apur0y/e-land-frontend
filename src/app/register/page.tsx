@@ -3,7 +3,7 @@ import Link from 'next/link';
 import RegisterForm from '@/components/auth/RegisterForm';
 import { Brain } from 'lucide-react';
 
-export const metadata: Metadata = { title: 'Create Account – LandIQ', description: 'Create a free LandIQ account and get 10 AI land analyses included.' };
+export const metadata: Metadata = { title: 'Create Account – Eland', description: 'Create a free Eland account and get 10 AI land analyses included.' };
 
 export default function RegisterPage() {
   return (

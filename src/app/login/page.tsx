@@ -3,7 +3,7 @@ import Link from 'next/link';
 import LoginForm from '@/components/auth/LoginForm';
 import { Brain } from 'lucide-react';
 
-export const metadata: Metadata = { title: 'Sign In – LandIQ', description: 'Sign in to your LandIQ account to access AI land analysis tools.' };
+export const metadata: Metadata = { title: 'Sign In – Eland', description: 'Sign in to your Eland account to access AI land analysis tools.' };
 
 export default function LoginPage() {
   return (
@@ -16,7 +16,7 @@ export default function LoginPage() {
             <div className="w-9 h-9 rounded-xl bg-brand-600 flex items-center justify-center shadow-glow">
               <Brain className="w-5 h-5 text-white" />
             </div>
-            <span className="font-display font-bold text-xl">Land<span className="gradient-text">IQ</span></span>
+            <span className="font-display font-bold text-xl">Eland<span className="gradient-text"></span></span>
           </Link>
           <div>
             <h2 className="font-display font-bold text-4xl text-white mb-4">
@@ -34,7 +34,7 @@ export default function LoginPage() {
               ))}
             </div>
           </div>
-          <p className="text-brand-800 text-sm">© {new Date().getFullYear()} LandIQ. All rights reserved.</p>
+          <p className="text-brand-800 text-sm">© {new Date().getFullYear()} Eland. All rights reserved.</p>
         </div>
       </div>
       <div className="flex-1 flex items-center justify-center p-8">

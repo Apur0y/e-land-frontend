@@ -17,7 +17,7 @@ export default function HowItWorks() {
       <div className="page-container">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} className="text-center mb-16">
           <p className="text-brand-400 font-medium mb-3 text-sm uppercase tracking-wider">Simple Process</p>
-          <h2 className="section-title mb-4">How LandIQ Works</h2>
+          <h2 className="section-title mb-4">How Eland Works</h2>
           <p className="section-subtitle mx-auto">From raw land data to investment-grade insights in under a minute.</p>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

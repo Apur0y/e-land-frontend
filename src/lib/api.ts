@@ -18,19 +18,19 @@ api.interceptors.request.use((config) => {
 });
 
 // Response interceptor - handle 401
-api.interceptors.response.use(
-  (response) => response,
-  (error) => {
-    if (error.response?.status === 401 && typeof window !== 'undefined') {
-      localStorage.removeItem('landiq_token');
-      localStorage.removeItem('landiq_user');
-      if (!window.location.pathname.includes('/login')) {
-        window.location.href = '/login';
-      }
-    }
-    return Promise.reject(error);
-  }
-);
+// api.interceptors.response.use(
+//   (response) => response,
+//   (error) => {
+//     if (error.response?.status === 401 && typeof window !== 'undefined') {
+//       localStorage.removeItem('landiq_token');
+//       localStorage.removeItem('landiq_user');
+//       if (!window.location.pathname.includes('/login')) {
+//         window.location.href = '/login';
+//       }
+//     }
+//     return Promise.reject(error);
+//   }
+// );
 
 // Auth
 export const authAPI = {

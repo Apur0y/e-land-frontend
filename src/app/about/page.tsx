@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { Brain, Target, Users, Shield, TrendingUp, MapPin, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'About LandIQ – AI Land Intelligence for Bangladesh',
-  description: 'Learn about LandIQ — our mission to democratize land investment in Bangladesh using AI technology.',
+  title: 'About Eland – AI Land Intelligence for Bangladesh',
+  description: 'Learn about Eland — our mission to democratize land investment in Bangladesh using AI technology.',
 };
 
 const team = [
@@ -36,7 +36,7 @@ export default function AboutPage() {
               Democratizing Land Investment in Bangladesh
             </h1>
             <p className="text-xl text-gray-400 leading-relaxed">
-              LandIQ was founded with a simple belief: every Bangladeshi deserves access to the same quality of investment intelligence that was previously only available to wealthy insiders. We built the tools we wished we had.
+              Eland was founded with a simple belief: every Bangladeshi deserves access to the same quality of investment intelligence that was previously only available to wealthy insiders. We built the tools we wished we had.
             </p>
           </div>
 
@@ -46,7 +46,7 @@ export default function AboutPage() {
               <p className="text-brand-400 font-medium text-sm uppercase tracking-wider mb-3">Our Mission</p>
               <h2 className="font-display font-bold text-4xl text-white mb-6">Making Smart Land Investment Accessible to All</h2>
               <p className="text-gray-400 leading-relaxed mb-4">
-                Bangladesh's land market is one of the most complex in South Asia — with fragmented data, opaque pricing, and hidden risks. We built LandIQ to change that.
+                Bangladesh's land market is one of the most complex in South Asia — with fragmented data, opaque pricing, and hidden risks. We built Eland to change that.
               </p>
               <p className="text-gray-400 leading-relaxed mb-8">
                 Using Google's Gemini AI, we analyze land from every angle — price trends, flood risks, infrastructure development, government projects, and investment potential — delivering insights in seconds that would take experts weeks to compile.
@@ -114,7 +114,7 @@ export default function AboutPage() {
 
           {/* CTA */}
           <div className="card p-10 text-center bg-gradient-to-br from-brand-950 to-surface-card border-brand-900">
-            <h2 className="font-display font-bold text-3xl text-white mb-4">Join the LandIQ Community</h2>
+            <h2 className="font-display font-bold text-3xl text-white mb-4">Join the Eland Community</h2>
             <p className="text-gray-400 mb-6 max-w-xl mx-auto">Be part of Bangladesh's fastest growing land investment platform. Start with 10 free AI analyses.</p>
             <Link href="/register" className="btn-primary mx-auto inline-flex">
               Create Free Account <ArrowRight className="w-4 h-4" />

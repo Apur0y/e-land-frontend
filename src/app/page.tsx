@@ -11,7 +11,7 @@ import PricingSection from '@/components/home/PricingSection';
 import CTASection from '@/components/home/CTASection';
 
 export const metadata: Metadata = {
-  title: 'LandIQ – AI-Powered Land Intelligence & Investment Platform Bangladesh',
+  title: 'Eland – AI-Powered Land Intelligence & Investment Platform Bangladesh',
   description: 'Find, analyze, and invest in land across Bangladesh with AI. Get price predictions, risk analysis, rental yield estimates, and smart property comparisons.',
 };
 

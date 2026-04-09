@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import MainLayout from '@/components/layout/MainLayout';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service – LandIQ',
-  description: 'LandIQ Terms of Service — rules and guidelines for using our platform.',
+  title: 'Terms of Service – Eland',
+  description: 'Eland Terms of Service — rules and guidelines for using our platform.',
 };
 
 export default function TermsPage() {
@@ -18,19 +18,19 @@ export default function TermsPage() {
             {[
               {
                 title: '1. Acceptance of Terms',
-                content: 'By accessing LandIQ, you agree to be bound by these Terms of Service. If you disagree with any part of these terms, you may not use our service.',
+                content: 'By accessing Eland, you agree to be bound by these Terms of Service. If you disagree with any part of these terms, you may not use our service.',
               },
               {
                 title: '2. AI Analysis Disclaimer',
-                content: 'LandIQ\'s AI analysis, price predictions, risk assessments, and investment recommendations are provided for informational purposes only. They do not constitute financial, legal, or investment advice. Always consult qualified professionals before making investment decisions. LandIQ is not responsible for investment losses based on AI-generated reports.',
+                content: 'Eland\'s AI analysis, price predictions, risk assessments, and investment recommendations are provided for informational purposes only. They do not constitute financial, legal, or investment advice. Always consult qualified professionals before making investment decisions. Eland is not responsible for investment losses based on AI-generated reports.',
               },
               {
                 title: '3. Listing Accuracy',
-                content: 'Users who list properties are responsible for the accuracy of listing information. LandIQ does not verify legal ownership or land records. Buyers must conduct their own due diligence. Fraudulent listings will result in immediate account termination.',
+                content: 'Users who list properties are responsible for the accuracy of listing information. Eland does not verify legal ownership or land records. Buyers must conduct their own due diligence. Fraudulent listings will result in immediate account termination.',
               },
               {
                 title: '4. User Accounts',
-                content: 'You are responsible for maintaining the security of your account. Sharing account credentials is prohibited. You must be at least 18 years old to use LandIQ. We reserve the right to terminate accounts that violate these terms.',
+                content: 'You are responsible for maintaining the security of your account. Sharing account credentials is prohibited. You must be at least 18 years old to use Eland. We reserve the right to terminate accounts that violate these terms.',
               },
               {
                 title: '5. AI Credits & Billing',
@@ -38,15 +38,15 @@ export default function TermsPage() {
               },
               {
                 title: '6. Prohibited Uses',
-                content: 'You may not use LandIQ to post fraudulent listings, scrape platform data, spam other users, violate any applicable laws, or attempt to reverse-engineer our AI systems.',
+                content: 'You may not use Eland to post fraudulent listings, scrape platform data, spam other users, violate any applicable laws, or attempt to reverse-engineer our AI systems.',
               },
               {
                 title: '7. Intellectual Property',
-                content: 'LandIQ\'s platform, code, AI models, and brand assets are proprietary. You may not reproduce, distribute, or create derivative works without explicit written permission.',
+                content: 'Eland\'s platform, code, AI models, and brand assets are proprietary. You may not reproduce, distribute, or create derivative works without explicit written permission.',
               },
               {
                 title: '8. Limitation of Liability',
-                content: 'LandIQ is not liable for investment losses, inaccurate AI predictions, or any indirect damages arising from use of our platform. Our total liability is limited to the amount you paid for our services in the last 3 months.',
+                content: 'Eland is not liable for investment losses, inaccurate AI predictions, or any indirect damages arising from use of our platform. Our total liability is limited to the amount you paid for our services in the last 3 months.',
               },
               {
                 title: '9. Governing Law',
@@ -54,7 +54,7 @@ export default function TermsPage() {
               },
               {
                 title: '10. Changes to Terms',
-                content: 'We may modify these terms at any time. Continued use of LandIQ after changes constitutes acceptance of the new terms.',
+                content: 'We may modify these terms at any time. Continued use of Eland after changes constitutes acceptance of the new terms.',
               },
             ].map(section => (
               <div key={section.title} className="card p-6">

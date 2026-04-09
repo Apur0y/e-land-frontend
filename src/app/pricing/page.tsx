@@ -4,7 +4,7 @@ import PricingSection from '@/components/home/PricingSection';
 import CTASection from '@/components/home/CTASection';
 
 export const metadata: Metadata = {
-  title: 'Pricing – LandIQ Plans & Features',
+  title: 'Pricing – Eland Plans & Features',
   description: 'Choose the right plan for your land investment needs. Start free, upgrade anytime. Pro plan includes 100 AI analyses per month.',
 };
 

@@ -7,9 +7,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/land/${params.slug}`, { next: { revalidate: 60 } });
     const data = await res.json();
     const land = data?.data;
-    if (!land) return { title: 'Land Listing | LandIQ' };
+    if (!land) return { title: 'Land Listing | Eland' };
     return {
-      title: `${land.metaTitle || land.title} | LandIQ`,
+      title: `${land.metaTitle || land.title} | Eland`,
       description: land.metaDescription || land.description?.substring(0, 160),
       openGraph: {
         title: land.title,
@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       },
     };
   } catch {
-    return { title: 'Land Listing | LandIQ' };
+    return { title: 'Land Listing | Eland' };
   }
 }
 

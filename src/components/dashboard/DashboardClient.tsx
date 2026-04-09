@@ -16,10 +16,10 @@ export default function DashboardClient() {
   const router = useRouter();
   const { user, isAuthenticated, fetchMe } = useAuthStore();
 
-  useEffect(() => {
-    if (!isAuthenticated) { router.push('/login'); return; }
-    fetchMe();
-  }, [isAuthenticated]);
+  // useEffect(() => {
+  //   if (!isAuthenticated) { router.push('/login'); return; }
+  //   fetchMe();
+  // }, [isAuthenticated]);
 
   const { data: reportsData, isLoading: reportsLoading } = useQuery({
     queryKey: ['my-reports'],

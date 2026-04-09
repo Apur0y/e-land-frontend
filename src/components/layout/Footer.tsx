@@ -31,7 +31,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-brand-400 flex-shrink-0" />
-                <a href="mailto:info@landiq.com" className="hover:text-white transition-colors">info@landiq.com</a>
+                <a href="mailto:info@eland.com" className="hover:text-white transition-colors">info@eland.com</a>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-brand-400 flex-shrink-0" />
@@ -109,7 +109,7 @@ export default function Footer() {
 
         <div className="border-t border-surface-border mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-gray-500">
-            © {new Date().getFullYear()} LandIQ. All rights reserved. Built for Bangladesh 🇧🇩
+            © {new Date().getFullYear()} Eland. All rights reserved. Built for Bangladesh 🇧🇩
           </p>
           <div className="flex items-center gap-1 text-sm text-gray-500">
             <Brain className="w-4 h-4 text-brand-400" />

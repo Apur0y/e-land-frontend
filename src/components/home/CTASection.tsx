@@ -24,7 +24,7 @@ export default function CTASection() {
               Ready to Invest Smarter?
             </h2>
             <p className="text-xl text-brand-200 mb-10 max-w-2xl mx-auto">
-              Join 5,000+ investors who use LandIQ to make confident land investment decisions backed by AI.
+              Join 5,000+ investors who use Eland to make confident land investment decisions backed by AI.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/register" className="btn-primary text-base px-8 py-4">

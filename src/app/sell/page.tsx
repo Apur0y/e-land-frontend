@@ -3,8 +3,8 @@ import MainLayout from '@/components/layout/MainLayout';
 import SellClient from '@/components/land/SellClient';
 
 export const metadata: Metadata = {
-  title: 'List Your Land – Sell or Lease Land in Bangladesh | LandIQ',
-  description: 'List your land for sale or lease on LandIQ. Reach thousands of verified investors. AI-verified listings get 5x more inquiries.',
+  title: 'List Your Land – Sell or Lease Land in Bangladesh | Eland',
+  description: 'List your land for sale or lease on Eland. Reach thousands of verified investors. AI-verified listings get 5x more inquiries.',
 };
 
 export default function SellPage() {

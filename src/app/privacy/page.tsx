@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import MainLayout from '@/components/layout/MainLayout';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy – LandIQ',
-  description: 'LandIQ Privacy Policy — how we collect, use, and protect your data.',
+  title: 'Privacy Policy – Eland',
+  description: 'Eland Privacy Policy — how we collect, use, and protect your data.',
 };
 
 export default function PrivacyPage() {
@@ -30,7 +30,7 @@ export default function PrivacyPage() {
               },
               {
                 title: '4. Data Sharing',
-                content: 'We share data only with service providers necessary to operate LandIQ (MongoDB Atlas for storage, Google Gemini for AI, email providers for notifications). We may share information if required by law or to protect our legal rights.',
+                content: 'We share data only with service providers necessary to operate Eland (MongoDB Atlas for storage, Google Gemini for AI, email providers for notifications). We may share information if required by law or to protect our legal rights.',
               },
               {
                 title: '5. Data Security',
@@ -38,7 +38,7 @@ export default function PrivacyPage() {
               },
               {
                 title: '6. Your Rights',
-                content: 'You have the right to access, correct, or delete your personal data at any time. You can update your profile from your dashboard or contact us at privacy@landiq.com to request data deletion.',
+                content: 'You have the right to access, correct, or delete your personal data at any time. You can update your profile from your dashboard or contact us at privacy@eland.com to request data deletion.',
               },
               {
                 title: '7. Cookies',
@@ -46,7 +46,7 @@ export default function PrivacyPage() {
               },
               {
                 title: '8. Contact',
-                content: 'For privacy concerns, contact us at privacy@landiq.com or write to: LandIQ Privacy, Gulshan-1, Dhaka-1212, Bangladesh.',
+                content: 'For privacy concerns, contact us at privacy@eland.com or write to: Eland Privacy, Gulshan-1, Dhaka-1212, Bangladesh.',
               },
             ].map(section => (
               <div key={section.title} className="card p-6">

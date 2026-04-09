@@ -8,13 +8,13 @@ const interSans = Inter({ variable: '--font-geist-sans', subsets: ['latin'] });
 const robotoMono = Roboto_Mono({ variable: '--font-geist-mono', subsets: ['latin'] });
 const sora = Sora({ variable: '--font-sora', subsets: ['latin'], weight: ['300', '400', '500', '600', '700', '800'] });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://landiq.com';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://eland.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'LandIQ – AI-Powered Land Intelligence & Investment Platform',
-    template: '%s | LandIQ',
+    default: 'Eland – AI-Powered Land Intelligence & Investment Platform',
+    template: '%s | Eland',
   },
   description: 'Discover, analyze, and invest in land with AI-powered insights. Get price predictions, risk assessments, rental yield calculations, and smart property comparisons.',
   keywords: [
@@ -23,24 +23,24 @@ export const metadata: Metadata = {
     'Dhaka land price', 'property rental yield', 'construction ROI calculator',
     'smart land comparison', 'plot for sale Bangladesh', 'land intelligence platform'
   ],
-  authors: [{ name: 'LandIQ', url: siteUrl }],
-  creator: 'LandIQ',
-  publisher: 'LandIQ',
+  authors: [{ name: 'Eland', url: siteUrl }],
+  creator: 'Eland',
+  publisher: 'Eland',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: siteUrl,
-    siteName: 'LandIQ',
-    title: 'LandIQ – AI-Powered Land Intelligence Platform',
+    siteName: 'Eland',
+    title: 'Eland – AI-Powered Land Intelligence Platform',
     description: 'Make smarter land investments with AI analysis, price predictions, and risk assessment.',
-    images: [{ url: `${siteUrl}/og-image.png`, width: 1200, height: 630, alt: 'LandIQ Platform' }],
+    images: [{ url: `${siteUrl}/og-image.png`, width: 1200, height: 630, alt: 'Eland Platform' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'LandIQ – AI Land Intelligence Platform',
+    title: 'Eland – AI Land Intelligence Platform',
     description: 'AI-powered land analysis, price predictions, and investment insights.',
     images: [`${siteUrl}/og-image.png`],
-    creator: '@landiq',
+    creator: '@eland',
   },
   robots: {
     index: true,
@@ -74,7 +74,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'WebSite',
-              name: 'LandIQ',
+              name: 'Eland',
               url: siteUrl,
               description: 'AI-powered land intelligence and investment platform',
               potentialAction: {

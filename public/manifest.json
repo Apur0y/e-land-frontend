@@ -1,6 +1,6 @@
 {
-  "name": "LandIQ – AI Land Intelligence",
-  "short_name": "LandIQ",
+  "name": "Eland – AI Land Intelligence",
+  "short_name": "Eland",
   "description": "AI-powered land investment platform for Bangladesh",
   "start_url": "/",
   "display": "standalone",
@@ -15,6 +15,6 @@
   "categories": ["finance", "business", "real-estate"],
   "lang": "en-BD",
   "screenshots": [
-    { "src": "/screenshot1.png", "sizes": "1280x720", "type": "image/png", "label": "LandIQ Homepage" }
+    { "src": "/screenshot1.png", "sizes": "1280x720", "type": "image/png", "label": "Eland Homepage" }
   ]
 }

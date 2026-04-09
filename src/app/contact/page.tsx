@@ -7,7 +7,7 @@ import toast from 'react-hot-toast';
 
 const contactInfo = [
   { icon: MapPin, label: 'Office', value: 'Gulshan-1, Dhaka-1212, Bangladesh' },
-  { icon: Mail, label: 'Email', value: 'info@landiq.com', href: 'mailto:info@landiq.com' },
+  { icon: Mail, label: 'Email', value: 'info@eland.com', href: 'mailto:info@eland.com' },
   { icon: Phone, label: 'Phone', value: '+880 1700-000000', href: 'tel:+8801700000000' },
   { icon: Clock, label: 'Hours', value: 'Sat–Thu: 9am – 6pm' },
 ];
@@ -34,7 +34,7 @@ export default function ContactPage() {
           <div className="text-center mb-14">
             <p className="text-brand-400 font-medium text-sm uppercase tracking-wider mb-3">Get in Touch</p>
             <h1 className="font-display font-bold text-5xl text-white mb-4">Contact Us</h1>
-            <p className="text-gray-400 text-xl max-w-xl mx-auto">Have questions about LandIQ? Want to partner with us? We're here to help.</p>
+            <p className="text-gray-400 text-xl max-w-xl mx-auto">Have questions about Eland? Want to partner with us? We're here to help.</p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-10">
@@ -62,7 +62,7 @@ export default function ContactPage() {
                   <div>
                     <p className="font-semibold text-white mb-1">Enterprise & Partnerships</p>
                     <p className="text-sm text-brand-300">Looking for API access, white-label solutions, or bulk land analysis? Reach out to our enterprise team.</p>
-                    <a href="mailto:enterprise@landiq.com" className="text-sm text-brand-400 hover:text-brand-300 mt-2 inline-block">enterprise@landiq.com →</a>
+                    <a href="mailto:enterprise@eland.com" className="text-sm text-brand-400 hover:text-brand-300 mt-2 inline-block">enterprise@eland.com →</a>
                   </div>
                 </div>
               </div>

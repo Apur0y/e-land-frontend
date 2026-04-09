@@ -18,7 +18,7 @@ export default function RegisterForm() {
     if (form.password.length < 6) { toast.error('Password must be at least 6 characters'); return; }
     try {
       await register({ name: form.name, email: form.email, phone: form.phone, password: form.password });
-      toast.success('Account created! Welcome to LandIQ 🎉');
+      toast.success('Account created! Welcome to Eland 🎉');
       router.push('/dashboard');
     } catch (err: any) {
       toast.error(err.message || 'Registration failed');

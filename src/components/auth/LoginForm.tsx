@@ -53,7 +53,7 @@ export default function LoginForm() {
         <span className="text-xs text-gray-600">OR TRY DEMO</span>
         <div className="flex-1 h-px bg-surface-border" />
       </div>
-      <button type="button" onClick={() => setForm({ email: 'admin@landiq.com', password: 'Admin@123456' })}
+      <button type="button" onClick={() => setForm({ email: 'admin@eland.com', password: 'Admin@123456' })}
         className="btn-secondary w-full text-sm py-2.5 text-gray-400">
         Fill Admin Credentials
       </button>

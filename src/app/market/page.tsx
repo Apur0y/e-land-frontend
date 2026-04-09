@@ -3,7 +3,7 @@ import MainLayout from '@/components/layout/MainLayout';
 import MarketClient from '@/components/market/MarketClient';
 
 export const metadata: Metadata = {
-  title: 'Market Insights – Bangladesh Land Price Trends | LandIQ',
+  title: 'Market Insights – Bangladesh Land Price Trends | Eland',
   description: 'Track land price trends, market statistics, and investment hotspots across all 64 districts of Bangladesh with real-time data.',
 };
 
