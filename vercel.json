@@ -8,8 +8,8 @@
     }
   ],
   "env": {
-    "NEXT_PUBLIC_API_URL": "@landiq_api_url",
-    "NEXT_PUBLIC_SITE_URL": "@landiq_site_url"
+    "NEXT_PUBLIC_API_URL": "https://e-land-backend.onrender.com",
+    "NEXT_PUBLIC_SITE_URL": "https://eland-one.vercel.app/"
   },
   "headers": [
     {

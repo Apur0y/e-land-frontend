@@ -212,8 +212,12 @@ export default function Navbar() {
                 <TrendingUp className="w-4 h-4 text-gray-400" /> Market Insights
               </Link>
               <div className="pt-2 border-t border-surface-border flex gap-3">
-                {isAuthenticated ? (
-                  <button onClick={logout} className="btn-secondary flex-1 text-sm">Sign Out</button>
+                {isAuthenticated ? (<div className='flex justify-between gap-4 w-full'>
+                   <Link href="/dashboard" className="btn-ghost text-sm border">
+                  <LayoutDashboard className="w-4 h-4" />
+                  Dashboard
+                </Link>
+                  <button onClick={logout} className="btn-secondary mr-3 text-sm">Sign Out</button></div>
                 ) : (
                   <>
                     <Link href="/login" className="btn-secondary flex-1 text-sm text-center">Sign In</Link>

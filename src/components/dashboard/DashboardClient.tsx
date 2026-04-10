@@ -77,7 +77,7 @@ export default function DashboardClient() {
             </h1>
             <p className="text-gray-400 mt-1">Here's your investment dashboard</p>
           </div>
-          <div className="flex gap-3">
+          <div className="flex gap-3 flex-col">
             <Link href="/sell" className="btn-secondary text-sm">
               <Plus className="w-4 h-4" /> List Property
             </Link>
