@@ -29,7 +29,8 @@ export default function LandCard({ land, showSave = true }: LandCardProps) {
     setSaving(false);
   };
 
-  const img = land.images?.find((i: any) => i.isPrimary)?.url || land.images?.[0]?.url;
+  const img = land.images?.find((i: any) => i.isPrimary)?.url || land.images?.[0]?.url || land.images[0];
+
   const score = land.aiAnalysis?.overallScore;
 
   return (
