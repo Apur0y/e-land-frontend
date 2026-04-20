@@ -12,7 +12,7 @@ export default function Footer() {
               <div className="w-9 h-9 rounded-xl bg-brand-600 flex items-center justify-center shadow-glow">
                 <Brain className="w-5 h-5 text-white" />
               </div>
-              <span className="font-display font-bold text-xl">Land<span className="gradient-text">IQ</span></span>
+              <span className="font-display font-bold text-xl">Eland<span className="gradient-text"></span></span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
               Bangladesh's most advanced AI-powered land intelligence platform. Make smarter investments with data-driven insights.
