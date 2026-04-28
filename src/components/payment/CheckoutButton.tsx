@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import toast from 'react-hot-toast';
 import { payment } from '@/lib/api';
+import { useAuthStore } from '@/store/authStore';
 
 interface CheckoutButtonProps {
   planId: 'pro' | 'enterprise' ;
@@ -19,11 +20,13 @@ export const CheckoutButton: React.FC<CheckoutButtonProps> = ({
   children = 'Start Subscription',
 }) => {
   const [loading, setLoading] = useState(false);
+  const { user, isAuthenticated, fetchMe } = useAuthStore();
+  console.log(user?.email);
 
   const info={
     planId,
-    email,
-    userId
+    email:user?.email,
+    userId:user?._id
   }
 
   
