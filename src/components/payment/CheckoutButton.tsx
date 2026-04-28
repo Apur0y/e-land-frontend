@@ -14,8 +14,6 @@ interface CheckoutButtonProps {
 
 export const CheckoutButton: React.FC<CheckoutButtonProps> = ({
   planId,
-  email,
-  userId,
   className = 'btn-primary',
   children = 'Start Subscription',
 }) => {
