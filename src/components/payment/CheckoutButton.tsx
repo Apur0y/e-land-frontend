@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
-import { useRouter } from 'next/navigation';
 import toast from 'react-hot-toast';
+import { payment } from '@/lib/api';
 
 interface CheckoutButtonProps {
   planId: 'pro' | 'enterprise' ;
@@ -11,13 +11,6 @@ interface CheckoutButtonProps {
   children?: React.ReactNode;
 }
 
-import { loadStripe } from "@stripe/stripe-js";
-
-const stripePromise = loadStripe(
-  process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
-);
-
-
 export const CheckoutButton: React.FC<CheckoutButtonProps> = ({
   planId,
   email,
@@ -26,21 +19,29 @@ export const CheckoutButton: React.FC<CheckoutButtonProps> = ({
   children = 'Start Subscription',
 }) => {
   const [loading, setLoading] = useState(false);
-  const router = useRouter();
+
+  const info={
+    planId,
+    email,
+    userId
+  }
+
+  
 
   const handleCheckout = async () => {
     try {
-      setLoading(true);     
-        const res = await fetch("http://localhost:5000/api/payment/create-checkout-session", {
-      method: "POST",
-    });
+      setLoading(true);
+       const res = await payment.sessionId(info);
 
-    const data = await res.json();
+    // depending on axios config:
+    const url = res?.data?.url;
 
-    
-    window.location.href = data.url;
+    if (!url) {
+      throw new Error("No checkout URL returned");
+    }
 
-      
+    // ✅ redirect (new Stripe way)
+    window.location.assign(url);
     } catch (error: unknown) {
       console.error('Checkout error:', error);
       const message = error instanceof Error ? error.message : 'Checkout failed';

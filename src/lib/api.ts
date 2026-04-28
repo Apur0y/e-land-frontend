@@ -96,4 +96,10 @@ export const adminAPI = {
   reports: (params?: any) => api.get('/admin/reports', { params }),
 };
 
+
+//Payment
+export const payment ={
+  sessionId:(data:any)=>api.post('/payment/create-checkout-session',data)
+}
+
 export default api;
