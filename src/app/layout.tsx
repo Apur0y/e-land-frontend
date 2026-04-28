@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { Sora, Inter, Roboto_Mono } from 'next/font/google';
+// @ts-ignore: side-effect import for global CSS
 import './globals.css';
 import { Providers } from '@/components/layout/Providers';
 import { Toaster } from 'react-hot-toast';
