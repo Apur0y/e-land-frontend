@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Check, Zap, Crown, Building2 } from 'lucide-react';
+import { CheckoutButton } from '@/components/payment/CheckoutButton';
 
 const plans = [
   {
@@ -14,8 +15,9 @@ const plans = [
     color: 'text-gray-400',
     features: ['10 AI analyses per month', 'Basic land listing view', 'Price prediction (basic)', 'Email support', '1 saved property'],
     cta: 'Get Started Free',
-    href: '/register',
+    href: '/register' ,
     highlight: false,
+    isPaid: false,
   },
   {
     name: 'Pro',
@@ -26,8 +28,9 @@ const plans = [
     color: 'text-brand-400',
     features: ['100 AI analyses per month', 'Full risk analysis', 'Rental yield calculator', 'Construction ROI tool', 'Smart 3-property comparison', 'PDF report downloads', '20 saved properties', 'Priority support'],
     cta: 'Start Pro Plan',
-    href: '/register?plan=pro',
+    planId: 'pro' as const,
     highlight: true,
+    isPaid: true,
   },
   {
     name: 'Enterprise',
@@ -36,10 +39,11 @@ const plans = [
     period: 'per month',
     desc: 'For agencies & developers',
     color: 'text-purple-400',
-    features: ['Unlimited AI analyses', 'Bulk property analysis', 'API access', 'White-label reports', 'Team collaboration (5 users)', 'Custom market reports', 'Dedicated account manager', 'Custom AI model training'],
-    cta: 'Contact Sales',
-    href: '/contact',
-    highlight: false,
+   features: ['100 AI analyses per month', 'Full risk analysis', 'Rental yield calculator', 'Construction ROI tool', 'Smart 3-property comparison', 'PDF report downloads', '20 saved properties', 'Priority support'],
+    cta: 'Start Pro Plan',
+    planId: 'enterprise' as const,
+    highlight: true,
+    isPaid: true,
   },
 ];
 
@@ -93,9 +97,18 @@ export default function PricingSection() {
                   </li>
                 ))}
               </ul>
-              <Link href={plan.href} className={plan.highlight ? 'btn-primary text-center' : 'btn-secondary text-center'}>
-                {plan.cta}
-              </Link>
+              {plan.isPaid ? (
+                <CheckoutButton
+                  planId={plan.planId as 'pro' | 'enterprise'}
+                  className={plan.highlight ? 'btn-primary text-center w-full' : 'btn-secondary text-center w-full'}
+                >
+                  {plan.cta}
+                </CheckoutButton>
+              ) : (
+                <Link href={plan.href!} className={plan.highlight ? 'btn-primary text-center block' : 'btn-secondary text-center block'}>
+                  {plan.cta}
+                </Link>
+              )}
             </motion.div>
           ))}
         </div>

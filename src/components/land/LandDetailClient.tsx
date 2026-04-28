@@ -8,7 +8,7 @@ import toast from 'react-hot-toast';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
-  MapPin, Brain, Shield, CheckCircle, Heart,
+  MapPin, Brain, CheckCircle, Heart,
   Eye, Phone, MessageCircle, Loader2,
   Home, Zap, Droplets, Flame, Car, Wind, ArrowLeft, AlertTriangle
 } from 'lucide-react';

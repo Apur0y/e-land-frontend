@@ -1,6 +1,6 @@
 "use client";
-import { useState, useEffect } from 'react';
-import { useSearchParams, useRouter } from 'next/navigation';
+import { useState } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { useQuery } from '@tanstack/react-query';
 import { motion } from 'framer-motion';
 import { landAPI } from '@/lib/api';
@@ -18,7 +18,7 @@ const sortOptions = [
 
 export default function ListingsClient() {
   const searchParams = useSearchParams();
-  const router = useRouter();
+
   const [showFilters, setShowFilters] = useState(false);
   const [page, setPage] = useState(1);
   const [filters, setFilters] = useState({
