@@ -1,5 +1,4 @@
 'use client';
-import type { Metadata } from 'next';
 import MainLayout from '@/components/layout/MainLayout';
 import { useState } from 'react';
 import { MapPin, Mail, Phone, Clock, Send, Loader2, CheckCircle, MessageCircle } from 'lucide-react';
