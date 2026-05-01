@@ -5,7 +5,7 @@ import { useAuthStore } from '@/store/authStore';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 import MainLayout from '@/components/layout/MainLayout';
-import { Brain, Loader2, Trash2, ExternalLink, FileText } from 'lucide-react';
+import { Brain, Loader2, Trash2, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 import toast from 'react-hot-toast';
 
