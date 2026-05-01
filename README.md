@@ -241,8 +241,8 @@ This project is proprietary software. All rights reserved.
 ## 📞 Support
 
 For support and inquiries, please contact:
-- Email: support@eland.com
-- Website: https://eland.com
+- Email: apuroy2785@gmail.com
+- Website: eland-one.vercel.app/
 
 ---
 
