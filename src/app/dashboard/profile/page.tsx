@@ -9,7 +9,7 @@ import { Loader2, User, Lock, Save } from 'lucide-react';
 
 export default function ProfilePage() {
   const router = useRouter();
-  const { user, isAuthenticated, fetchMe, updateUser } = useAuthStore();
+  const { user, isAuthenticated, updateUser } = useAuthStore();
   const [tab, setTab] = useState<'profile' | 'password'>('profile');
   const [loading, setLoading] = useState(false);
   const [profile, setProfile] = useState({ name: '', phone: '' });
@@ -18,7 +18,7 @@ export default function ProfilePage() {
   useEffect(() => {
     if (!isAuthenticated) { router.push('/login'); return; }
     if (user) setProfile({ name: user.name || '', phone: user.phone || '' });
-  }, [isAuthenticated, user]);
+  }, [isAuthenticated, router, user]);
 
   const saveProfile = async (e: React.FormEvent) => {
     e.preventDefault();
