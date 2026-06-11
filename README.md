@@ -214,17 +214,6 @@ npm i -g vercel
 vercel
 ```
 
-### Other Platforms
-- **AWS:** Configure environment variables and deploy with CI/CD
-- **Docker:** Use provided Dockerfile for containerized deployment
-- **Traditional Hosting:** Build and run with `npm run build && npm start`
-
-## 🤝 Contributing
-
-1. Create a feature branch (`git checkout -b feature/amazing-feature`)
-2. Commit your changes (`git commit -m 'Add amazing feature'`)
-3. Push to the branch (`git push origin feature/amazing-feature`)
-4. Open a Pull Request
 
 ## 📚 Documentation
 
@@ -234,16 +223,10 @@ For more detailed documentation, check:
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 - [Stripe Documentation](https://stripe.com/docs)
 
-## 📄 License
 
-This project is proprietary software. All rights reserved.
-
-## 📞 Support
 
 For support and inquiries, please contact:
 - Email: apuroy2785@gmail.com
-- Website: eland-one.vercel.app/
+- Website: https://apur0y.vercel.app/
 
----
 
-**Made with ❤️ by the Eland Team**
